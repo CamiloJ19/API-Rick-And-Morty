@@ -1,0 +1,80 @@
+body {
+    background-color: #0b0c10;
+    color: #c5f82a;
+    font-family: 'Orbitron', sans-serif;
+
+.navbar-toggler{
+    background-color: #66fcf1;
+}
+
+}
+.navbar {
+    background-color: #1f2833 !important;
+    font-size: 1.1rem;
+    margin-top: 1rem !important;
+}
+.navbar-brand {
+    color: #66fcf1 !important;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.navbar .form-select {
+    background-color: #0b0c10;
+    color: #c5f82a;
+    border-color: #45a29e;
+}
+.navbar .form-select:focus {
+    box-shadow: 0 0 5px #66fcf1;
+}
+.card {
+    background-color: #1f2833;
+    border: 2px solid #45a29e;
+    color: #ffffff;
+    transition: transform 0.3s ease;
+}
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #66fcf1;
+}
+.card-title {
+    color: #66fcf1;
+    font-size: 1.1rem;
+}
+.card-text {
+    color: #c5f82a;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+}
+.status-icon {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+.status-alive { background-color: #28a745; }
+.status-dead { background-color: #dc3545; }
+.status-unknown { background-color: #6c757d; }
+.card-info-item {
+    margin-bottom: 5px;
+}
+.card-info-label {
+    color: #ffffff;
+    font-weight: bold;
+    margin-right: 5px;
+}
+footer {
+    background-color: #1f2833;
+    font-size: 0.9rem;
+}
+a.text-info {
+    color: #66fcf1 ;
+    text-decoration: underline;
+}
+a.text-white:hover {
+    color: #66fcf1 ;
+}
+label {
+    color: #ffffff;
+}
