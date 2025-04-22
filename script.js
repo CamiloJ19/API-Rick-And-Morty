@@ -2,6 +2,7 @@ const apiURL = 'https://rickandmortyapi.com/api/character';
         const cardContainer = document.getElementById('cardContainer');
         const select = document.getElementById('characterSelect');
         let allCharacters = []; 
+        let currentDiplayedCharacters =[];
 
         async function fetchAllCharacters() {
             try {
@@ -36,9 +37,9 @@ const apiURL = 'https://rickandmortyapi.com/api/character';
         }
 
         function displayRandomCharacters(count) {
-            const randomCharacters = getRandomCharacters(allCharacters, count);
-            renderCards(randomCharacters);
-            fillSelect(randomCharacters);
+            currentDiplayedCharacters = getRandomCharacters(allCharacters, count);
+            renderCards(currentDiplayedCharacters);
+            fillSelect(currentDiplayedCharacters);
         }
 
         function renderCards(data) {
@@ -89,7 +90,7 @@ const apiURL = 'https://rickandmortyapi.com/api/character';
         select.addEventListener('change', () => {
             const selected = select.value;
             if (selected === 'all') {
-                renderCards(allCharacters.slice(0, 16)); 
+                renderCards(currentDiplayedCharacters); 
             } else {
                 const filtered = allCharacters.filter(c => c.id == selected);
                 renderCards(filtered);
